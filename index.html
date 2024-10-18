@@ -4,25 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiril Bangachev</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #87CEEB; /* Light blue */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .content-container {
+            margin: 0 auto;
+            width: 70%; /* 15% margin on both sides */
+        }
+
+        .content {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .content img {
+            max-width: 300px;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 800px) {
+            .content-container {
+                width: 90%; /* Adjust for smaller screens */
+            }
+
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <img src="files/Kiril%20Photo.jpg" alt="Kiril's Photo" style="max-width: 300px;">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="fun.html">Fun</a></li>
-        </ul>
-    </nav>
-    <p>
-        I am a third-year PhD student at MIT where I am fortunate to be advised by <a href="https://www.mit.edu/~gbresler/" target="_blank">Guy Bresler</a>. My current research focuses on high-dimensional statistics. I am specifically interested in the interplay between dimensionality of data, information, and computational efficiency. I have worked on problems related to high-dimensional random geometric graphs and noisy linear equations over finite fields.
-    </p>
-    <p>
-        Before coming to MIT, I was an undergraduate at Princeton where I was lucky to work with Matt Weinberg on problems in algorithmic game theory. I have also worked in combinatorics. Check out my research page!
-    </p>
-    <p>
-        <a href="files/Kiril%20Bangachev%20Resume.pdf" target="_blank">View my CV</a>.
-    </p>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="fun.html">Fun</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-container">
+        <div class="content">
+            <img src="files/Kiril%20Photo.jpg" alt="Kiril's Photo">
+
+            <div class="text">
+                <p>
+                    I am a third-year PhD student at MIT, fortunate to be advised by 
+                    <a href="https://www.mit.edu/~gbresler/" target="_blank">Guy Bresler</a>. My current research focuses 
+                    on high-dimensional statistics. I am specifically interested in the interplay between the dimensionality 
+                    of data, information, and computational efficiency. I have worked on problems related to high-dimensional 
+                    random geometric graphs and noisy linear equations over finite fields.
+                </p>
+                <p>
+                    Before coming to MIT, I was an undergraduate at Princeton where I was lucky to work with Matt Weinberg 
+                    on problems in algorithmic game theory. I have also worked in combinatorics. Check out my research page!
+                </p>
+                <p>
+                    <a href="files/Kiril%20Bangachev%20Resume.pdf" target="_blank">CV</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Kiril Bangachev
+    </footer>
+
 </body>
 </html>
