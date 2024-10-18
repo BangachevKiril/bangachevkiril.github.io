@@ -45,6 +45,17 @@
             flex: 1;
         }
 
+        .photo-row {
+            display: flex; /* Align images in a row */
+            justify-content: space-between; /* Space between images */
+            margin-top: 30px; /* Add some space above */
+        }
+
+        .photo {
+            flex: 1; /* Each photo takes equal space */
+            text-align: center; /* Center the caption below each image */
+        }
+
         footer {
             text-align: center;
             padding: 15px;
@@ -69,6 +80,14 @@
             .content img {
                 margin-right: 0;
                 margin-bottom: 15px;
+            }
+
+              .photo-row {
+                flex-direction: column; /* Stack images on smaller screens */
+            }
+
+            .photo {
+                margin-bottom: 20px; /* Space between stacked images */
             }
         }
     </style>
@@ -146,6 +165,21 @@
                 </a> K. Bangachev. S. M. Weinberg. 2023.
             </li>
         </ul>
+
+        <div class="photo-row">
+            <div class="photo">
+                <img src="files/family.jpg" alt="Family">
+                <p>Family</p>
+            </div>
+            <div class="photo">
+                <img src="files/tocretreat.jpg" alt="TOC Family">
+                <p>TOC Family</p>
+            </div>
+            <div class="photo">
+                <img src="files/banff.jpg" alt="Where I want to be right now">
+                <p>Where I want to be right now</p>
+            </div>
+        </div>
     </div>
 
     <footer>
